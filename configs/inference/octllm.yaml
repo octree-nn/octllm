@@ -1,0 +1,13 @@
+# Download from the Hub by default; set an absolute local directory to use downloaded weights.
+model_name_or_path: ${oc.env:OCTLLM_WEIGHTS_DIR,anonymous-octllm/OctLLM}
+template: qwen2_vl
+infer_backend: huggingface
+trust_remote_code: true
+max_length: 8192
+flash_attn: sdpa
+use_separate_new_token_embeddings: true
+
+# Router architecture is loaded from the checkpoint config.json.
+finetuning_type: freeze
+use_3d_position_embedding: true
+use_3d_token_router: true

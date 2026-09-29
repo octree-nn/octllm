@@ -1,0 +1,402 @@
+{
+  "image-to-3D-ABO": {
+    "file_name": "ABO/llm_trellis_dataset_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-ABO": {
+    "file_name": "ABO/llm_trellis_dataset_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-ABO": {
+    "file_name": "ABO/llm_trellis_dataset_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-HSSD": {
+    "file_name": "HSSD/llm_trellis_dataset_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-HSSD": {
+    "file_name": "HSSD/llm_trellis_dataset_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-HSSD": {
+    "file_name": "HSSD/llm_trellis_dataset_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-ObjaverseXL_sketchfab-1": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-ObjaverseXL_sketchfab-1": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-ObjaverseXL_sketchfab-1": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-ObjaverseXL_sketchfab-2": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_2_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-ObjaverseXL_sketchfab-2": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_2_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-ObjaverseXL_sketchfab-2": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_2_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-ObjaverseXL_sketchfab-3": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_3_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-ObjaverseXL_sketchfab-3": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_3_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-ObjaverseXL_sketchfab-3": {
+    "file_name": "ObjaverseXL_sketchfab/llm_trellis_dataset_3_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-car": {
+    "file_name": "shapenet/mllm_shapenet_dataset_car_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-car": {
+    "file_name": "shapenet/llm_shapenet_dataset_car_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-car": {
+    "file_name": "shapenet/llm_shapenet_dataset_car_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-chair": {
+    "file_name": "shapenet/mllm_shapenet_dataset_chair_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-chair": {
+    "file_name": "shapenet/llm_shapenet_dataset_chair_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-chair": {
+    "file_name": "shapenet/llm_shapenet_dataset_chair_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-table": {
+    "file_name": "shapenet/mllm_shapenet_dataset_table_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-table": {
+    "file_name": "shapenet/llm_shapenet_dataset_table_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-table": {
+    "file_name": "shapenet/llm_shapenet_dataset_table_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-rifle": {
+    "file_name": "shapenet/mllm_shapenet_dataset_rifle_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-rifle": {
+    "file_name": "shapenet/llm_shapenet_dataset_rifle_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-rifle": {
+    "file_name": "shapenet/llm_shapenet_dataset_rifle_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "image-to-3D-airplane": {
+    "file_name": "shapenet/mllm_shapenet_dataset_airplane_1_image.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "text-to-3D-airplane": {
+    "file_name": "shapenet/llm_shapenet_dataset_airplane_1_description.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  },
+  "3D-to-text-airplane": {
+    "file_name": "shapenet/llm_shapenet_dataset_airplane_1_understanding.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+name: Quality checks
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  lightweight-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install check dependencies
+        run: python -m pip install 'ruff==0.11.13' 'pytest>=8,<9' 'numpy>=1.24,<2' 'tqdm>=4.66,<5' 'easydict>=1.10,<2'
+      - name: Check syntax and undefined names
+        run: ruff check --select E9,F63,F7,F82 .
+      - name: Compile Python sources
+        run: python -m compileall -q dataset_toolkits evaluation scripts src tests trellis inference.py train.py setup.py
+      - name: Check data preparation and model sources
+        run: python -m pytest -q tests/test_release_data_tools.py tests/test_model_sources.py evaluation/inference_efficiency/tests/test_benchmark.py

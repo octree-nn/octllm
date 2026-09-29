@@ -1,0 +1,10 @@
+torch
+torchvision
+transformers
+accelerate
+sentencepiece
+Pillow
+PyYAML
+tqdm
+safetensors
+openai

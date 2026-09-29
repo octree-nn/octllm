@@ -1,0 +1,35 @@
+# TRELLIS/ShapeLLM-Omni runtime additions for the unified OctLLM inference CLI.
+# Install PyTorch 2.4.0+cu121, torchvision 0.19.0+cu121, and
+# xformers 0.0.27.post2 from the PyTorch cu121 index before this file.
+
+# Shared ABI-sensitive Python stack
+numpy==1.26.4
+pillow==10.4.0
+opencv-python-headless==4.10.0.84
+pydantic==2.10.6
+transformers==4.52.4
+tokenizers==0.21.1
+ocnn==2.2.7
+
+# TRELLIS basic runtime (aligned with ShapeLLM-Omni)
+imageio==2.36.1
+imageio-ffmpeg==0.5.1
+tqdm==4.67.1
+easydict==1.13
+scipy==1.14.1
+rembg==2.0.60
+onnxruntime-gpu==1.20.2
+trimesh==4.5.3
+xatlas==0.0.9
+pyvista==0.44.2
+pymeshfix==0.17.0
+igraph==0.11.8
+open3d==0.19.0
+qwen-vl-utils==0.0.11
+ninja
+
+# Sparse convolution and rendering extensions used by voxel -> TRELLIS -> GLB
+spconv-cu121==2.3.8
+git+https://github.com/EasternJournalist/utils3d.git@9a4eb15e4021b67b12c460c7057d642626897ec8
+https://huggingface.co/spaces/JeffreyXiang/TRELLIS/resolve/main/wheels/diff_gaussian_rasterization-0.0.0-cp310-cp310-linux_x86_64.whl?download=true
+https://huggingface.co/spaces/JeffreyXiang/TRELLIS/resolve/main/wheels/nvdiffrast-0.3.3-cp310-cp310-linux_x86_64.whl?download=true

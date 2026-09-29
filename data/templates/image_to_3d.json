@@ -1,0 +1,328 @@
+[
+    {
+      "messages": [
+        {
+          "content": "Generate a 3D mesh based on the following image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Sure! Here is a 3D mesh based on the image you provided: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Please create a 3D model from this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I'll generate a 3D mesh for you based on the image. Here it is: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Can you build a 3D mesh using this image as reference?<image>",
+          "role": "user"
+        },
+        {
+          "content": "Absolutely! Based on the image you shared, I've created this 3D mesh: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "I need a 3D reconstruction of the object shown in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Of course! I've generated a 3D mesh reconstruction based on the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Convert this image into a 3D mesh model.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Here's the 3D mesh model generated from your image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Please generate a three-dimensional mesh from the provided image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've processed the image and created a 3D mesh for you: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Create a 3D asset based on what you see in this picture.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Based on the image, here's the 3D mesh asset I've created: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Design a 3D mesh that matches the object in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Perfect! I've designed a 3D mesh matching the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Produce a 3D model from the image below.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've produced a 3D model based on the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Develop a 3D mesh structure inspired by this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Here's the 3D mesh structure I developed from the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Generate a 3D representation of the content shown in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've generated a 3D mesh representation based on the image content: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Please construct a 3D mesh from the visual information in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've constructed a 3D mesh using the visual information from the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Build a three-dimensional model that corresponds to this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've built a 3D model corresponding to the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Make a 3D mesh object based on the following image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've created a 3D mesh object based on the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Transform this image into a 3D mesh format.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've transformed the image into a 3D mesh: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Please provide a 3D mesh that represents the object in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "Here's a 3D mesh representing the object from the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Create a 3D model that captures the geometry shown in the image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've created a 3D model capturing the geometry from the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Generate a mesh in 3D space based on this image reference.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've generated a 3D mesh based on the image reference: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "I want a 3D mesh reconstruction of what's depicted in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've reconstructed a 3D mesh from the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Please render a 3D mesh model from the provided image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've rendered a 3D mesh model from the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Construct a 3D asset that matches the visual appearance in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've constructed a 3D asset matching the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Build a three-dimensional mesh from the image data provided.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've built a 3D mesh from the image data: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Design a 3D mesh that reflects the structure visible in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've designed a 3D mesh reflecting the structure in the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Produce a 3D mesh representation of the scene or object in this image.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've produced a 3D mesh representation of the image: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    },
+    {
+      "messages": [
+        {
+          "content": "Generate a 3D model mesh using the image as a visual guide.<image>",
+          "role": "user"
+        },
+        {
+          "content": "I've generated a 3D mesh using the image as a guide: #response#",
+          "role": "assistant"
+        }
+      ],
+      "images": "#image_path#"
+    }
+]
+

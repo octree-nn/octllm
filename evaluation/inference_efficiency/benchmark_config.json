@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "dataset": "datasets/toys4k/test.json",
+  "num_assets": 200,
+  "seed": 42,
+  "gpu": "0",
+  "expected_gpu_name_substring": "5090",
+  "warmup": 1,
+  "git_proxy": "",
+  "repositories": {
+    "shapellm_omni": {
+      "url": "https://github.com/JAMESYJL/ShapeLLM-Omni.git",
+      "commit": "b8c6cc05174942cb51944e9b23af951c84fbdc61",
+      "directory": "ShapeLLM-Omni"
+    },
+    "3dgen_r1": {
+      "url": "https://github.com/Ivan-Tang-3D/3DGen-R1.git",
+      "commit": "204b808ce041feaa80f497096aaa10365a76b390",
+      "directory": "3DGen-R1"
+    },
+    "sar3d": {
+      "url": "https://github.com/cyw-3d/SAR3D.git",
+      "commit": "6362412851a0c5b3fafcededb9ca15835d4c4cf7",
+      "directory": "SAR3D"
+    },
+    "llama_mesh": {
+      "url": "https://github.com/nv-tlabs/LLaMA-Mesh.git",
+      "commit": "82a36bc0bb0bf72259c28747e7e80a4e15122bc7",
+      "directory": "LLaMA-Mesh"
+    },
+    "octgpt": {
+      "url": "https://github.com/octree-nn/octgpt.git",
+      "commit": "9eb824296bb6888219f34eb78fe81d9d1c5912d4",
+      "directory": "octgpt"
+    }
+  },
+  "methods": {
+    "shapellm_omni": {
+      "label": "ShapeLLM-Omni",
+      "runner": "runners/hf_generate.py",
+      "family": "qwen25_vl",
+      "python": "/path/to/environments/shapellm_omni/bin/python",
+      "model_path": "yejunliang23/ShapeLLM-7B-omni",
+      "repository": "shapellm_omni"
+    },
+    "3dgen_r1": {
+      "label": "3DGen-R1",
+      "runner": "runners/hf_generate.py",
+      "family": "qwen25_vl",
+      "python": "/path/to/environments/3dgen_r1/bin/python",
+      "model_path": "IvanTang/3DGen-R1",
+      "repository": "3dgen_r1"
+    },
+    "sar3d": {
+      "label": "SAR3D",
+      "runner": "runners/sar3d.py",
+      "python": "/path/to/environments/sar3d/bin/python",
+      "ar_checkpoint": "cyw-3d/sar3d",
+      "vae_checkpoint": "cyw-3d/sar3d",
+      "clip_path": "openai/clip-vit-large-patch14",
+      "repository": "sar3d"
+    },
+    "llama_mesh": {
+      "label": "LLaMA-Mesh",
+      "runner": "runners/hf_generate.py",
+      "family": "llama_mesh",
+      "python": "/path/to/environments/llama_mesh/bin/python",
+      "model_path": "Zhengyi/LLaMA-Mesh",
+      "repository": "llama_mesh"
+    },
+    "octgpt": {
+      "label": "OctGPT",
+      "runner": "runners/octgpt.py",
+      "python": "/path/to/environments/octgpt/bin/python",
+      "checkpoint": "wst2001/OctGPT",
+      "vae_checkpoint": "wst2001/OctGPT",
+      "clip_path": "openai/clip-vit-large-patch14",
+      "repository": "octgpt"
+    },
+    "octllm": {
+      "label": "Ours (OctLLM)",
+      "runner": "runners/octllm.py",
+      "python": "/path/to/environments/octllm/bin/python",
+      "model_path": "anonymous-octllm/OctLLM",
+      "inference_config": "../../configs/inference/octllm.yaml"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Additive dependencies for the existing OctLLM-TRELLIS CUDA 12.8 environment.
+# Do not install SAR3D's upstream environment.yml on RTX 5090: it pins the
+# pre-Blackwell PyTorch 2.0 / CUDA 11.7 stack.
+beartype==0.18.5
+blobfile==2.1.1
+ipdb==0.12.3
+timm==0.6.13
+typed-argument-parser==1.10.1

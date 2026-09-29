@@ -1,0 +1,93 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-VL-7B-Instruct
+image_max_pixels: 262144
+video_max_pixels: 16384
+trust_remote_code: true
+
+### method
+stage: sft
+do_train: true
+finetuning_type: freeze
+freeze_vision_tower: true
+freeze_multi_modal_projector: true
+freeze_trainable_layers: 0
+freeze_trainable_modules: all
+freeze_extra_modules: null
+flash_attn: sdpa
+deepspeed: configs/deepspeed/ds_z2_config.json
+
+### tokenizer
+add_tokens: "<mesh0>, <mesh1>, <mesh2>, <mesh3>, <mesh4>, <mesh5>, <mesh6>, <mesh7>, <mesh8>, <mesh9>, <mesh10>, <mesh11>, <mesh12>, <mesh13>, <mesh14>, <mesh15>, <mesh16>, <mesh17>, <mesh18>, <mesh19>, <mesh20>, <mesh21>, <mesh22>, <mesh23>, <mesh24>, <mesh25>, <mesh26>, <mesh27>, <mesh28>, <mesh29>, <mesh30>, <mesh31>, <mesh32>, <mesh33>, <mesh34>, <mesh35>, <mesh36>, <mesh37>, <mesh38>, <mesh39>, <mesh40>, <mesh41>, <mesh42>, <mesh43>, <mesh44>, <mesh45>, <mesh46>, <mesh47>, <mesh48>, <mesh49>, <mesh50>, <mesh51>, <mesh52>, <mesh53>, <mesh54>, <mesh55>, <mesh56>, <mesh57>, <mesh58>, <mesh59>, <mesh60>, <mesh61>, <mesh62>, <mesh63>, <mesh64>, <mesh65>, <mesh66>, <mesh67>, <mesh68>, <mesh69>, <mesh70>, <mesh71>, <mesh72>, <mesh73>, <mesh74>, <mesh75>, <mesh76>, <mesh77>, <mesh78>, <mesh79>, <mesh80>, <mesh81>, <mesh82>, <mesh83>, <mesh84>, <mesh85>, <mesh86>, <mesh87>, <mesh88>, <mesh89>, <mesh90>, <mesh91>, <mesh92>, <mesh93>, <mesh94>, <mesh95>, <mesh96>, <mesh97>, <mesh98>, <mesh99>, <mesh100>, <mesh101>, <mesh102>, <mesh103>, <mesh104>, <mesh105>, <mesh106>, <mesh107>, <mesh108>, <mesh109>, <mesh110>, <mesh111>, <mesh112>, <mesh113>, <mesh114>, <mesh115>, <mesh116>, <mesh117>, <mesh118>, <mesh119>, <mesh120>, <mesh121>, <mesh122>, <mesh123>, <mesh124>, <mesh125>, <mesh126>, <mesh127>, <mesh128>, <mesh129>, <mesh130>, <mesh131>, <mesh132>, <mesh133>, <mesh134>, <mesh135>, <mesh136>, <mesh137>, <mesh138>, <mesh139>, <mesh140>, <mesh141>, <mesh142>, <mesh143>, <mesh144>, <mesh145>, <mesh146>, <mesh147>, <mesh148>, <mesh149>, <mesh150>, <mesh151>, <mesh152>, <mesh153>, <mesh154>, <mesh155>, <mesh156>, <mesh157>, <mesh158>, <mesh159>, <mesh160>, <mesh161>, <mesh162>, <mesh163>, <mesh164>, <mesh165>, <mesh166>, <mesh167>, <mesh168>, <mesh169>, <mesh170>, <mesh171>, <mesh172>, <mesh173>, <mesh174>, <mesh175>, <mesh176>, <mesh177>, <mesh178>, <mesh179>, <mesh180>, <mesh181>, <mesh182>, <mesh183>, <mesh184>, <mesh185>, <mesh186>, <mesh187>, <mesh188>, <mesh189>, <mesh190>, <mesh191>, <mesh192>, <mesh193>, <mesh194>, <mesh195>, <mesh196>, <mesh197>, <mesh198>, <mesh199>, <mesh200>, <mesh201>, <mesh202>, <mesh203>, <mesh204>, <mesh205>, <mesh206>, <mesh207>, <mesh208>, <mesh209>, <mesh210>, <mesh211>, <mesh212>, <mesh213>, <mesh214>, <mesh215>, <mesh216>, <mesh217>, <mesh218>, <mesh219>, <mesh220>, <mesh221>, <mesh222>, <mesh223>, <mesh224>, <mesh225>, <mesh226>, <mesh227>, <mesh228>, <mesh229>, <mesh230>, <mesh231>, <mesh232>, <mesh233>, <mesh234>, <mesh235>, <mesh236>, <mesh237>, <mesh238>, <mesh239>, <mesh240>, <mesh241>, <mesh242>, <mesh243>, <mesh244>, <mesh245>, <mesh246>, <mesh247>, <mesh248>, <mesh249>, <mesh250>, <mesh251>, <mesh252>, <mesh253>, <mesh254>, <mesh255>, <mesh_bos>, <mesh_eos>, <MASK>"
+resize_vocab: false
+train_new_tokens_only: false
+use_separate_new_token_embeddings: true
+
+### 3D replace
+full_depth: 3
+max_depth: 6
+use_3d_position_embedding: true
+add_mask_token: true
+loss_mode: text_and_mesh
+use_3d_token_router: true
+route_3d_replace_ffn: true
+route_3d_replace_attn_proj: true
+route_3d_attn_proj_mode: qkvo
+route_3d_layer_scope: explicit
+route_3d_last_n_layers: 0
+route_3d_layer_ids: 0,4,8,12,14,16,18,20,22,24,26,27
+route_3d_mlp_ratio: 1.0
+route_3d_init_from_base: true
+route_3d_freeze_base: true
+
+### dataset
+dataset: >-
+  image-to-3D-ABO, text-to-3D-ABO, 3D-to-text-ABO,
+  image-to-3D-HSSD, text-to-3D-HSSD, 3D-to-text-HSSD,
+  image-to-3D-ObjaverseXL_sketchfab-1, text-to-3D-ObjaverseXL_sketchfab-1, 3D-to-text-ObjaverseXL_sketchfab-1,
+  image-to-3D-ObjaverseXL_sketchfab-2, text-to-3D-ObjaverseXL_sketchfab-2, 3D-to-text-ObjaverseXL_sketchfab-2,
+  image-to-3D-ObjaverseXL_sketchfab-3, text-to-3D-ObjaverseXL_sketchfab-3, 3D-to-text-ObjaverseXL_sketchfab-3,
+  image-to-3D-car, image-to-3D-chair, image-to-3D-table, image-to-3D-rifle, image-to-3D-airplane, text-to-3D-chair, text-to-3D-table, text-to-3D-airplane, text-to-3D-car, text-to-3D-rifle, 3D-to-text-chair, 3D-to-text-table, 3D-to-text-airplane, 3D-to-text-car, 3D-to-text-rifle
+# dataset: image-to-3D-ObjaverseXL_sketchfab-1, text-to-3D-ObjaverseXL_sketchfab-1, 3D-to-text-ObjaverseXL_sketchfab-1
+dataset_dir: datasets/octllm/sft
+media_dir: .
+template: qwen2_vl
+cutoff_len: 8192
+max_samples: null
+overwrite_cache: true
+preprocessing_num_workers: 128
+dataloader_num_workers: 4
+group_by_length: true
+default_system: |
+  You are a helpful assistant specialized in 3D asset generation and understanding, image understanding and chatting. 
+  When you are asked to generate a 3D asset from an image, you should reply in formats like: "I've produced a 3D model based on the image: ", "Based on the image, here's the 3D mesh asset I've created: ", etc. 
+  And if you are asked to generate a 3D asset from a text description, you should reply in formats like: "I've produced a 3D mesh asset based on your description: ", "Of course! I've generated a 3D mesh based on your text prompt: ", etc.
+  If you are asked to describe a 3D asset, just describe it in detail.
+  The text can be varied, but the colon ":" must be included.
+
+### output
+output_dir: outputs/octllm
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+save_only_model: false
+save_total_limit: 3
+report_to: tensorboard  # choices: [none, wandb, tensorboard, swanlab, mlflow]
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 2
+learning_rate: 1.0e-4
+num_train_epochs: 15.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+resume_from_checkpoint_mode: auto
+
+### eval
+val_size: 0.001
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 500

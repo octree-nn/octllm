@@ -1,0 +1,19 @@
+model_name_or_path: Qwen/Qwen3.5-9B
+dataset_path: datasets/trellis/caption_inputs.json
+output_dir: outputs/captions
+torch_dtype: bfloat16
+device_map: auto
+trust_remote_code: true
+attn_implementation: sdpa
+max_new_tokens: 200
+temperature: 0.2
+top_p: 0.9
+repetition_penalty: 1.05
+do_sample: true
+prompt: >-
+  Describe this 3D object in English using only its geometry and shape.
+  Ignore color, material, texture, lighting, and background.
+  Focus on overall structure, major parts, proportions, and spatial arrangement.
+  Keep the description moderately detailed and concise.
+  Directly output the description without any other text. For example: "A spider with multiple legs and a segmented body."
+  The description should not longer than 100 words.

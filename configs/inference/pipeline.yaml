@@ -1,0 +1,74 @@
+### Unified OctLLM single-turn inference
+mllm:
+  # Relative paths are resolved from this YAML file.
+  config: octllm.yaml
+  system_prompt: >-
+    You are a helpful assistant specialized in 3D asset generation and understanding,
+    image understanding and chatting. When you are asked to generate a 3D asset from
+    an image, you should reply in formats like: "I've produced a 3D model based on the
+    image: ", "Based on the image, here's the 3D mesh asset I've created: ", etc. And
+    if you are asked to generate a 3D asset from a text description, you should reply
+    in formats like: "I've produced a 3D mesh asset based on your description: ", "Of
+    course! I've generated a 3D mesh based on your text prompt: ", etc. If you are
+    asked to describe a 3D asset, just describe it in detail. The text can be varied,
+    but the colon ":" must be included.
+  verbose: false
+  generation:
+    max_new_tokens: 10000
+    temperature: 0.5
+    top_p: 0.9
+    top_k: 40
+    bos_top_k: 1
+    max_layer: 6
+    full_depth: 3
+    keep_mask_in_cache: false
+  image:
+    # Enable for custom image-to-3D inputs; keep disabled for general image chat.
+    preprocess: false
+    size: 1024
+    object_fill: 0.75
+    # Standard PNGs use straight alpha; use premultiplied only for known premultiplied inputs.
+    alpha_mode: straight
+    save_dir: null
+
+mesh_input:
+  # GLB/OBJ -> S-Octree, using the dataset preprocessing recipe.
+  # Octree depths follow mllm.generation.max_layer and full_depth.
+  num_samples: 100000
+  device: cpu
+  prune: true
+  target_depth: 5
+  drop_prob: 0.5
+
+mesh:
+  enabled: true
+  octree_device: cpu
+  octree_threshold: 0.0
+  vae:
+    # Paper completion: legacy = BCE bottleneck model without cross-scale skips.
+    # choices: none, legacy, trellis_align
+    mode: legacy
+    device: cuda
+    threshold: null
+    # null loads completion/model.safetensors from OctLLM's model_name_or_path.
+    # An explicit legacy .pt or .safetensors file remains supported.
+    checkpoint: null
+    encoder_align_checkpoint: null
+    trellis_vae_dir: "microsoft/TRELLIS-image-large"
+  trellis:
+    # `auto` reuses the first input image when present; otherwise it uses text.
+    condition: auto
+    model_path: null
+    image_model_path: "microsoft/TRELLIS-image-large"
+    text_model_path: "microsoft/TRELLIS-text-xlarge"
+    text_condition_model_path: "openai/clip-vit-large-patch14"
+    text_prompt: null
+    simplify: 0.95
+    texture_size: 1024
+    voxel_rotation_axis: x
+    voxel_rotation_quarter_turns: 1
+
+output:
+  dir: outputs/octllm
+  # null creates a timestamped name and avoids overwriting previous results.
+  name: null
