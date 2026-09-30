@@ -18,7 +18,7 @@ repository root; runner and inference YAML paths are relative to this directory.
 
 | Model | Default Hugging Face repository | Checkpoint files |
 | --- | --- | --- |
-| OctLLM | [`anonymous-octllm/OctLLM`](https://huggingface.co/anonymous-octllm/OctLLM) | Transformers model, tokenizer, and 3D branches |
+| OctLLM | [`Plurato123/OctLLM`](https://huggingface.co/Plurato123/OctLLM) | Transformers model, tokenizer, and 3D branches |
 | ShapeLLM-Omni | [`yejunliang23/ShapeLLM-7B-omni`](https://huggingface.co/yejunliang23/ShapeLLM-7B-omni) | Transformers model and tokenizer |
 | 3DGen-R1 | [`IvanTang/3DGen-R1`](https://huggingface.co/IvanTang/3DGen-R1) | Transformers model and tokenizer |
 | LLaMA-Mesh | [`Zhengyi/LLaMA-Mesh`](https://huggingface.co/Zhengyi/LLaMA-Mesh) | Transformers model and tokenizer |

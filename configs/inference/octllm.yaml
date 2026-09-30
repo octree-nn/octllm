@@ -1,5 +1,5 @@
 # Download from the Hub by default; set an absolute local directory to use downloaded weights.
-model_name_or_path: ${oc.env:OCTLLM_WEIGHTS_DIR,anonymous-octllm/OctLLM}
+model_name_or_path: ${oc.env:OCTLLM_WEIGHTS_DIR,Plurato123/OctLLM}
 template: qwen2_vl
 infer_backend: huggingface
 trust_remote_code: true

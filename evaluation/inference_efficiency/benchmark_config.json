@@ -81,7 +81,7 @@
       "label": "Ours (OctLLM)",
       "runner": "runners/octllm.py",
       "python": "/path/to/environments/octllm/bin/python",
-      "model_path": "anonymous-octllm/OctLLM",
+      "model_path": "Plurato123/OctLLM",
       "inference_config": "../../configs/inference/octllm.yaml"
     }
   }

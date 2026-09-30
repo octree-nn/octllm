@@ -101,7 +101,7 @@ def test_octllm_benchmark_stages_hub_model_without_completion(hub):
     import fnmatch
 
     fake, snapshot = hub
-    config = {"model_path": "anonymous-octllm/OctLLM"}
+    config = {"model_path": "Plurato123/OctLLM"}
     resolved = resolve_method_artifacts("octllm", config, local_files_only=True)
     assert resolved["model_path"] == str(snapshot)
     assert resolved["model_sources"] == config

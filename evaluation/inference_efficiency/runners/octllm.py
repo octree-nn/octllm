@@ -262,7 +262,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--config", type=Path, required=True)
-    parser.add_argument("--model-path", default="anonymous-octllm/OctLLM")
+    parser.add_argument("--model-path", default="Plurato123/OctLLM")
     parser.add_argument("--config-hash", required=True)
     parser.add_argument("--source-commit", default="working-tree")
     parser.add_argument("--seed", type=int, default=42)

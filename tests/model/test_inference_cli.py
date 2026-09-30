@@ -39,7 +39,7 @@ def test_default_and_local_sources_share_lazy_completion(tmp_path, monkeypatch, 
     monkeypatch.chdir(tmp_path)
 
     settings = inference._load_settings(str(inference.DEFAULT_CONFIG))
-    source = str(tmp_path) if local else "anonymous-octllm/OctLLM"
+    source = str(tmp_path) if local else "Plurato123/OctLLM"
     assert load_inference_config(settings["mllm"]["config"])["model_name_or_path"] == source
     assert settings["mesh"]["vae"]["model_source"] == source
     hub.hf_hub_download.assert_not_called()

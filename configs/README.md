@@ -70,7 +70,7 @@ steps. For a newly trained model, set `mesh.vae.checkpoint` in the inference
 YAML to the saved `best.pt`. The released inference bundle instead stores
 the model tensors in `completion/model.safetensors` alongside OctLLM;
 `mesh.vae.checkpoint: null` selects that bundled checkpoint automatically.
-Inference defaults to `anonymous-octllm/OctLLM` on Hugging Face; setting
+Inference defaults to `Plurato123/OctLLM` on Hugging Face; setting
 `OCTLLM_WEIGHTS_DIR` to an absolute local directory overrides both model sources.
 Explicit relative paths in `model_name_or_path` are resolved from its YAML file.
 

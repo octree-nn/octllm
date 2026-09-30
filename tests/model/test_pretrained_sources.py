@@ -20,7 +20,7 @@ def test_octllm_runtime_loads_all_components_from_one_snapshot(tmp_path, monkeyp
 
     from scripts import generate_octree
 
-    source = str(tmp_path) if local else "anonymous-octllm/OctLLM"
+    source = str(tmp_path) if local else "Plurato123/OctLLM"
     config = {"model_name_or_path": source}
     model_args = SimpleNamespace(
         model_name_or_path=source, cache_dir=str(tmp_path / "cache"),

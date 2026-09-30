@@ -56,8 +56,8 @@ are described in their respective guides below.
 
 | Model | Default source |
 | --- | --- |
-| OctLLM | [`anonymous-octllm/OctLLM`](https://huggingface.co/anonymous-octllm/OctLLM) |
-| Occupancy completion | [`completion/model.safetensors` in the same repository](https://huggingface.co/anonymous-octllm/OctLLM/tree/main/completion) |
+| OctLLM | [`Plurato123/OctLLM`](https://huggingface.co/Plurato123/OctLLM) |
+| Occupancy completion | [`completion/model.safetensors` in the same repository](https://huggingface.co/Plurato123/OctLLM/tree/main/completion) |
 | TRELLIS image decoder | [`microsoft/TRELLIS-image-large`](https://huggingface.co/microsoft/TRELLIS-image-large) |
 | TRELLIS text decoder | [`microsoft/TRELLIS-text-xlarge`](https://huggingface.co/microsoft/TRELLIS-text-xlarge) |
 | CLIP ViT-L/14 for text conditioning | [`openai/clip-vit-large-patch14`](https://huggingface.co/openai/clip-vit-large-patch14) |
@@ -68,7 +68,7 @@ first use and reuse the local cache, like TRELLIS. To load a local copy,
 download the repository and set `OCTLLM_WEIGHTS_DIR` to its absolute path:
 
 ```bash
-hf download anonymous-octllm/OctLLM --local-dir checkpoints/OctLLM
+hf download Plurato123/OctLLM --local-dir checkpoints/OctLLM
 export OCTLLM_WEIGHTS_DIR="$(pwd)/checkpoints/OctLLM"
 ```
 
