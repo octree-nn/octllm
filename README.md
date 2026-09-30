@@ -1,6 +1,23 @@
 <h1 align="center">OctLLM</h1>
 <h3 align="center">Octrees as an Explicit 3D Language</h3>
 <p align="center">
+  Ran&nbsp;Dan<sup>1</sup>,
+  <a href="https://wst2001.github.io/">Si-Tong&nbsp;Wei</a><sup>1</sup>,
+  Pengfei&nbsp;Xiong<sup>2</sup>,
+  <a href="https://sites.google.com/site/zhangweinus/?pli=1&amp;authuser=0">Wei&nbsp;Zhang</a><sup>2</sup>,
+  <a href="http://www.muyadong.com/">Yadong&nbsp;Mu</a><sup>1</sup>,
+  <a href="https://wang-ps.github.io/">Peng-Shuai&nbsp;Wang</a><sup>1,†</sup>
+</p>
+<p align="center">
+  <sup>1</sup>Peking University &nbsp; <sup>2</sup>Independent Researcher<br>
+  <sup>†</sup>Corresponding author
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/arXiv-Coming%20soon-b31b1b?logo=arxiv&amp;logoColor=white" alt="arXiv: Coming soon">
+  <a href="https://plurato.github.io/OctLLM-page/"><img src="https://img.shields.io/badge/Project%20Page-Website-2e7d32?logo=googlechrome&amp;logoColor=white" alt="Project Page"></a>
+  <a href="https://huggingface.co/Plurato123/OctLLM"><img src="https://img.shields.io/badge/Hugging%20Face-Weights-ffd21e?logo=huggingface&amp;logoColor=ffd21e" alt="Hugging Face model weights"></a>
+</p>
+<p align="center">
   <a href="#installation">Installation</a> ·
   <a href="#pretrained-models">Models</a> ·
   <a href="#inference">Inference</a> ·
@@ -8,8 +25,6 @@
   <a href="configs/README.md">Training</a> ·
   <a href="evaluation/README.md">Evaluation</a>
 </p>
-
-<!-- Add authors and paper / project links here when available. -->
 
 <p align="center"><img src="assets/teaser.gif" width="100%" alt="OctLLM generation and understanding"></p>
 
