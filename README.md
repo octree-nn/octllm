@@ -13,7 +13,7 @@
   <sup>†</sup>Corresponding author
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/arXiv-Coming%20soon-b31b1b?logo=arxiv&amp;logoColor=white" alt="arXiv: Coming soon">
+  <a href="https://arxiv.org/abs/2610.02388"><img src="https://img.shields.io/badge/arXiv-2610.02388-b31b1b?logo=arxiv&amp;logoColor=white" alt="arXiv: 2610.02388"></a>
   <a href="https://plurato.github.io/OctLLM-page/"><img src="https://img.shields.io/badge/Project%20Page-Website-2e7d32?logo=googlechrome&amp;logoColor=white" alt="Project Page"></a>
   <a href="https://huggingface.co/Plurato123/OctLLM"><img src="https://img.shields.io/badge/Hugging%20Face-Weights-ffd21e?logo=huggingface&amp;logoColor=ffd21e" alt="Hugging Face model weights"></a>
 </p>
@@ -219,5 +219,15 @@ terms are included in [LICENSE](LICENSE).
 
 ## Citation
 
-<!-- Add the verified BibTeX entry when the paper metadata is available. -->
-Citation information will be added with the paper release.
+```bibtex
+@misc{dan2026octreesexplicit3dlanguage,
+  title={Octrees as an Explicit 3D Language},
+  author={Ran Dan and Si-Tong Wei and Pengfei Xiong
+          and Wei Zhang and Yadong Mu and Peng-Shuai Wang},
+  year={2026},
+  eprint={2610.02388},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.02388},
+}
+```
