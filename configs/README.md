@@ -1,6 +1,6 @@
 # Training
 
-Run commands from the repository root after [installation](../README.md#installation)
+Run commands from the repository root after [installation](../README.md#-installation)
 and [data preparation](../dataset_toolkits/README.md).
 
 ## Dataset registration

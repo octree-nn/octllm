@@ -1,6 +1,6 @@
 # Data preparation
 
-Run commands from the repository root after [installation](../README.md#installation).
+Run commands from the repository root after [installation](../README.md#-installation).
 The tools process TRELLIS-500K source subsets (Sketchfab, HSSD, ABO) and five
 ShapeNet categories: airplane, car, chair, rifle, and table. Obtain meshes and
 metadata from the original providers. Exact training selections and evaluation

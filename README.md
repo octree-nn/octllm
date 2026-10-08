@@ -16,11 +16,13 @@
   <a href="https://arxiv.org/abs/2610.02388"><img src="https://img.shields.io/badge/arXiv-2610.02388-b31b1b?logo=arxiv&amp;logoColor=white" alt="arXiv: 2610.02388"></a>
   <a href="https://plurato.github.io/OctLLM-page/"><img src="https://img.shields.io/badge/Project%20Page-Website-2e7d32?logo=googlechrome&amp;logoColor=white" alt="Project Page"></a>
   <a href="https://huggingface.co/Plurato123/OctLLM"><img src="https://img.shields.io/badge/Hugging%20Face-Weights-ffd21e?logo=huggingface&amp;logoColor=ffd21e" alt="Hugging Face model weights"></a>
+  <a href="https://huggingface.co/spaces/hugging-apps/octllm"><img src="https://img.shields.io/badge/Hugging%20Face-Demo-ff9d00?logo=huggingface&amp;logoColor=ffd21e" alt="Hugging Face demo"></a>
 </p>
 <p align="center">
-  <a href="#installation">Installation</a> ·
-  <a href="#pretrained-models">Models</a> ·
-  <a href="#inference">Inference</a> ·
+  <a href="#-news">News</a> ·
+  <a href="#-installation">Installation</a> ·
+  <a href="#-pretrained-models">Models</a> ·
+  <a href="#-inference">Inference</a> ·
   <a href="dataset_toolkits/README.md">Data</a> ·
   <a href="configs/README.md">Training</a> ·
   <a href="evaluation/README.md">Evaluation</a>
@@ -30,11 +32,13 @@
 
 Official implementation of **Octrees as an Explicit 3D Language**. OctLLM represents 3D shapes as Sparse Octree (S-Octree) token sequences, supporting **text-to-3D, image-to-3D, and 3D understanding** in a single model. Dedicated 3D branches interact with a frozen Qwen2.5-VL backbone; occupancy completion and TRELLIS decoding convert generated octrees into textured meshes.
 
-<!-- Real output turntables: assets/generation.gif (6–10 seconds, ideally under 10 MB).
-<p align="center"><img src="assets/generation.gif" width="100%" alt="OctLLM generated meshes"></p>
--->
 
-## Installation
+## ✨ News
+
+- **Oct 2026**: An [online demo](https://huggingface.co/spaces/hugging-apps/octllm) is now available on Hugging Face Spaces. Huge thanks to [@apolinario](https://github.com/apolinario) for building it! 🤗
+- **Oct 2026**: Release paper, code and model weights. 🚀
+
+## 💻 Installation
 
 Requires **Linux x86_64**, **conda**, and an **NVIDIA GPU**. Run commands from
 the repository root:
@@ -52,7 +56,7 @@ Use `bash setup.sh --resume` to continue installation in an existing environment
 Data rendering requires Blender 4.0. Caption annotation and evaluation setup
 are described in their respective guides below.
 
-## Pretrained Models
+## 📦 Pretrained Models
 
 | Model | Default source |
 | --- | --- |
@@ -81,7 +85,7 @@ from `config.json`. Text-to-3D uses TRELLIS-text and CLIP; image-to-3D uses
 TRELLIS-image. 3D understanding and text/image chat only require the OctLLM
 checkpoint.
 
-## Inference
+## 🚀 Inference
 
 ### Single-Turn Chat
 
@@ -193,7 +197,7 @@ python inference.py --prompt-file /path/to/prompt.txt --no-mesh --cuda-device 0
 For batch 3D understanding from GLB assets, see the
 [evaluation guide](evaluation/README.md).
 
-## Data and Training
+## 🔧 Data and Training
 
 Follow the [data preparation guide](dataset_toolkits/README.md) to tokenize
 meshes, generate captions, and build the instruction datasets. Configure the
@@ -207,7 +211,7 @@ The [training guide](configs/README.md) covers dataset registration,
 distributed training, occupancy completion, and ShapeNet ablations.
 Evaluation commands are in [evaluation/README.md](evaluation/README.md).
 
-## Acknowledgements
+## 🤗 Acknowledgements
 
 This work builds on [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),
 [TRELLIS](https://github.com/microsoft/TRELLIS),
@@ -217,7 +221,7 @@ This work builds on [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory),
 Original OctLLM contributions use the MIT license. Third-party notices and
 terms are included in [LICENSE](LICENSE).
 
-## Citation
+## 📄 Citation
 
 ```bibtex
 @misc{dan2026octreesexplicit3dlanguage,
